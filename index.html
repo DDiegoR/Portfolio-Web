@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Romero - Full Stack Developer Jr</title>
+    <link rel="icon" href="imagenes\LogoDR-blue.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- CSS GENERAL -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS SOCIAL -->
+    <link rel="stylesheet" href="styleSocial.css">
+    <!-- CSS SKILLS -->
+    <link rel="stylesheet" href="styleSkills.css">
+    <!-- CSS ANIMACION BACKGROUND -->
+    <link rel="stylesheet" href="styleBackground.css">
+    <!-- CSS MODAL -->
+    <link rel="stylesheet" href="styleModal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- ANIMACION BACKGROUND -->
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <!-- FIN ANIMACION BACKGROUND -->
+        <!-- LOGIN -->
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modalLogin">
+                <div class="modal-content">
+                        <div class="login-box">
+                            <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h2>Iniciar Sesión</h2>
+                            <form>
+                                <div class="user-box">
+                                    <input type="email" name="" required="">
+                                    <label>Correo Electrónico</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="password" name="" required="">
+                                    <label>Contraseña</label>
+                                </div>
+                                <div class="button-form">
+                                    <a id="submit" href="#">
+                                       Ingresar
+                                    </a>
+                                    <div id="register">
+                                        No tienes cuenta?
+                                        <a href="#" data-bs-target="#modalRegistro" data-bs-toggle="modal">
+                                            Registrarse
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                    
+                    </div>
+            </div>
+        </div>
+        <!-- MODAL REGISTRO -->
+        <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="login-box">
+                        <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h2>Registrarse</h2>
+                        <form>
+                            <div class="usuario-box col-12">
+                                <div class="user-box col">
+                                    <input type="text" name="" required="">
+                                    <label>Nombre</label>
+                                </div>
+                                <div class="user-box col">
+                                    <input type="text" name="" required="">
+                                    <label>Apellido</label>
+                                </div>
+                            </div>
+                            <div class="user-box">
+                                <input type="email" name="" required="">
+                                <label>Correo Electrónico</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required="">
+                                <label>Contraseña</label>
+                            </div>
+                            <div class="registrarse">
+                                <button type="submit" class="btn btn-primary col-6">Registrarse</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FIN LOGIN -->
+
+        <!-- CONTACTO -->
+        <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content modalCaja">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-caja col-12">
+                            <div class="modal-contacto col">
+                                <h1>Contacto</h1>
+                                <h3>Diego Eduardo Romero</h3>
+                                <h6>Full Stack Developer Jr</h6>
+                                <p>!Hola! Podés contactarme para algún proyecto o bien solo para hacerme una consulta.</p>
+                                <div class="contacto-iconoSkills">
+                                    <ul class="listaSkills-modal">
+                                        <li><img src="imagenes/html.png" alt=""></li>
+                                        <li><img src="imagenes/css.png" alt=""></li>
+                                        <li><img src="imagenes/javascript.png" alt=""></li>
+                                        <li><img src="imagenes/angular.png" alt=""></li>
+                                        <li><img src="imagenes/mysql.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <p>Trataré de responderte lo antes posible.</p>
+                            </div>
+                            <form class="col">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Correo Electrónico:</label>
+                                    <input type="email" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text" rows="6"></textarea>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN CONTACTO -->
+
+        <!-- MODAL IMAGEN TITULOS -->
+        <div class="modal fade" id="titulo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-container">
+                        <img id="imagenTitulo" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN MODAL IMAGEN TITULOS -->
+
+        <!-- VISTA PRINCIPAL -->
+        <nav class="barraNavegacion">
+            <div class="logos">
+                <div class="logo">
+                    <a href="#"><img id="logo" src="imagenes\LogoDR-white.png" alt="logo"></a>
+                </div>
+                <div class="arg-programa">
+                    <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank"><img id="arg-programa" src="imagenes/APLogo-20-20.png" alt=""></a>
+                </div>
+            </div>
+            <div class="contenedor-nav">
+                <ol class="listaLinks">
+                    <li><a class="enlaces" href="#sobreMi">Sobre Mí</a></li>
+                    <li><a class="enlaces" href="#estudios">Estudios</a></li>
+                    <li><a class="enlaces" href="#proyectos">Proyectos</a></li>
+                    <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contacto</a></li>
+                    <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Iniciar Sesión</a></li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
+                        </div>
+                    </li>
+                </ol>  
+            </div>
+            <div class="menuDesplegable">
+                <div>
+                    <button id="botonMenu" onclick="desplegarMenu()">
+                        <div class="ham-box">
+                            <div id="ham-box-inner" class="ham-box-inner-close"></div>
+                        </div>
+                    </button>
+                    <nav id="contenidoMenu">
+                        <ul class="linksNav">
+                            <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">Sobre Mí</a></li>
+                            <li><a href="#estudios" onclick="desplazarSeccionMenu()">Estudios</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contacto</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Iniciar Sesión</a></li>
+                        </ul>
+                        <ul class="socialNavbar">
+                            <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="imagenes\instaNavbar.png" alt=""></a></li>
+                            <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="imagenes\tw.png" alt=""></a></li>
+                            <li><a href="https://github.com/DDiegoR" target="_blank"><img src="imagenes\gh.png" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="imagenes\in.png" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <header class="vistaPrincipal">   
+            <!-- BARRA NAV -->
+            
+            <!-- BARRA NAV -->
+
+            <!-- REDES SOCIALES -->
+            <div id="social" class="social">
+                <a href="https://www.instagram.com/diegoromer9/" class="link" target="_blank">
+                    <i class="fab fa-instagram instagram"></i>
+                </a>
+                <a href="https://twitter.com/romerodiego356" class="link" target="_blank">
+                    <i class="fab fa-twitter twitter"></i>
+                </a>
+                <a href="https://github.com/DDiegoR" class="link" target="_blank">
+                    <i class="fab fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" class="link" target="_blank">
+                    <i class="fab fa-linkedin linkedin"></i>
+                </a>
+            </div>
+            <!-- FIN REDES SOCIALES -->
+
+            <!-- CENTRO -->
+            <div class="contenedorCentro">
+                <div class="contenedorCentral">
+                    <div id="contenedorCentral">
+                        <div>
+                            <div class="titular">
+                                <h1 class="diego">Diego Romero</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 class="descripcion">Full Stack Developer Jr</h3>
+                            </div>
+                        </div>    
+                        <div>
+                            <div>
+                                <a class="btn btn-primary" href="#" role="button" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Escribeme</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="logoCentral">
+                    <div>
+                        <img src="imagenes\LogoDR-blueGrande.png" id="logoCentral" alt="LogoDR">
+                    </div>
+                </div>
+            </div>
+            <!-- FIN CENTRO -->
+        </header>
+        
+        <!-- IMAGENES ANIMADAS -->
+        <div class="imagenesAnimadas">
+            <img class="imagenes" id="triangulo1" src="imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="triangulo2" src="imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="triangulo3" src="imagenes\triangulo.png" alt="">
+            <img class="imagenes" id="circulo1" src="imagenes\circulo.png" alt="">
+            <img class="imagenes" id="circulo2" src="imagenes\circulo.png" alt="">
+            <img class="imagenes" id="circulo3" src="imagenes\circulo.png" alt="">
+            <img class="imagenes" id="cuadrado1" src="imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="cuadrado2" src="imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="cuadrado3" src="imagenes\cuadrado.png" alt="">
+            <img class="imagenes" id="equis1" src="imagenes\equis.png" alt="">
+            <img class="imagenes" id="equis2" src="imagenes\equis.png" alt="">
+            <img class="imagenes" id="equis3" src="imagenes\equis.png" alt="">
+        </div>
+        <!-- FIN IMAGENES ANIMADAS -->
+
+        <!-- FIN VISTA PRINCIPAL -->
+
+        <!-- CONTENIDO -->
+        <main>
+            <!-- SOBRE MI -->
+            <section id="sobreMi" class="seccion-sobreMi">
+                <h2 class="titulos-secciones especial">Sobre Mí</h2>
+                <div class="contenedor-sobreMi">
+                    <div class="parrafoAbout">
+                        <p>
+                            !Hola! Mi nombre es Diego, vivo en Corrientes - Argentina y soy Full Stack Developer Jr. Una de las cosas que me gusta mucho es poder dar "vida" a una página web.
+                            El desarrollo web me comenzó a llamar la atención en 2020 cuando un amigo me contó sobre eso. Decidí empezar a realizar 
+                            cursos de Introducción a Front End, aprendiendo HTML-CSS y un poco de Javascript. A medida que iba creando cosas y practicando, 
+                            mi interés hacia el desarrolo web fue creciendo más, realicé otro curso ya de Full Stack en donde pude aprender muchas cosas más 
+                            sobre como crear mi propio sitio web.
+                            Mi enfoque principal es recibirme de la universidad como Ingeniero en Sistemas de Información, pero aún así me gusta mucho trabajar
+                            como Full Stack Developer Jr.
+                        </p>
+                        <p>
+                            Te mando un saludo y gracias por pasarte por mi Portfolio Web!
+                        </p>
+                    </div>
+                    <div class="perfil">
+                        <img id="img-perfil" src="imagenes\perfil2.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- FIN SOBRE MI -->
+
+            <!-- SECCION ESTUDIOS -->
+            <section id="estudios" class="seccion-estudios">
+                <h2 class="titulos-secciones">Mis Estudios</h2>
+                <div class="caja-estudios">
+                    <!-- Listado -->
+                    <div class="listado-estudios" role="table">
+                        <button class="botonEstudio activeBoton" role="tab" onclick="cambiaF()">Universidad</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaDW()">Curso Diseñador Web</button>
+                        <button class="botonEstudio" role="tab" onclick="cambiaAP()">Full Stack Developer Jr</button>
+                    </div>
+                    <!-- Contenido -->
+                    <div class="contenido-secciones">
+                        <div id="facultad" role="tabpanel">
+                            <h3 class="tituloEstudio">Donde estudio <a href="https://www.frre.utn.edu.ar/">@Facultad</a></h3>
+                            <h5 class="subtituloEstudio">Marzo 2016 - Presente</h5>
+                            <p class="descripcionEstudio">
+                                Actualmente estoy estudiando Ingeniería en Sistemas de Información en la Universidad Tecnológia Nacional 
+                                Facultad Regional de Resistencia.
+                            </p>
+                        </div>
+                        <div id="cursoDW" role="tabpanel">
+                            <h3 class="tituloEstudio">Diseñador Web <a href="http://ien.edu.ar/">@ien</a></h3>
+                            <h5 class="subtituloEstudio">Agosto - Diciembre 2021</h5>
+                            <p class="descripcionEstudio">
+                                Uno de los cursos que realice fue el de Diseñador Web dictado por el Instituto Educativo Económico Nacional (ien) el cual me 
+                                sirvió mucho para dar mis primero pasos en el gran mundo del FrontEnd.
+                            </p>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ien">Ver certificado</a>
+                        </div>
+                        <div id="argentinaPrograma" role="tabpanel">
+                            <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
+                            <h5 class="subtituloEstudio">Febrero 2022 - Enero 2023</h5>
+                            <p class="descripcionEstudio">
+                                Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
+                            </p>
+                            <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">Ver certificado</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN SECCION ESTUDIOS -->
+
+            <!-- SECCION HARD & SOFT SKILLS -->
+            
+            <!-- FIN SECCION HARD & SOFT SKILLS -->
+            
+            <!-- SECCION PROYECTOS -->
+            <section id="proyectos" class="seccion-proyectos">
+                <h2 class="titulos-secciones">Proyectos</h2>
+                <div class="caja-proyectos">
+                    <ul class="listaPanel">
+                        <li>
+                            <div class="panel">
+                                <a href="#">
+                                    <img src="imagenes/portfolio.png" alt="">
+                                    <div class="cajaTexto">
+                                        <h2>Portfolio Web</h2>
+                                        <p>
+                                            Este portfolio lo realice en el curso de Argentina Programa #YoProgramo y es la pagina en la que estas ahora mismo. 
+                                            Fue una buena experiencia y un buen aprendizaje en donde pude volcar todo lo aprendido.
+                                            El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, Javascript, Angular, Spring Boot, Java, MySQL, Heroku. 
+                                        </p>
+                                        <h6>Año: 2022</h6>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                        </li>
+                        <li>
+                            <div class="panel">
+                                <a href="#">
+                                    <img src="imagenes/sitioweb.png" alt="">
+                                    <div class="cajaTexto">
+                                        <h2>Primer Sitio Web</h2>
+                                        <p>
+                                            Este sitio web lo diseñé en un curso de Diseñador Web. Es como una página en donde hay info
+                                            sobre mí. Fue desarollada a modo de práctica y el stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
+                                        </p>
+                                        <h6>Año: 2021</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel">
+                                <a href="#">
+                                    <img src="imagenes/Simon.png" alt="">
+                                    <div class="cajaTexto">
+                                        <h2>Juego - Simón</h2>
+                                        <p>
+                                            Este proyecto es de un juego que desarrollé junto a un grupo de amigos en la facultad, el nombre del 
+                                            grupo era Vulgary. Este juego es una versión digital del famoso juego electrónico Simon creado 
+                                            por Ralph Baer y Howard J. Morrison, su interfaz es simple ya que esta desarrollado para consola 
+                                            utilizando el lenguaje Python. Fue una linda experiencia de trabajo en equipo y creatividad.
+                                        </p>
+                                        <h6>Año: 2016</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="panel">
+                                <a href="#">
+                                    <img src="imagenes/aboutGH.png" alt="">
+                                    <div class="cajaTexto">
+                                        <h2>Tarjeta de Presentación</h2>
+                                        <p>
+                                            Esta es una tarjeta de presentación web que diseñé en un curso de Diseñador Web.
+                                            El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
+                                        </p>
+                                        <h6>Año: 2021</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+            </section>
+            <!-- FIN SECCION PROYECTOS -->
+        </main>
+        <!-- FIN CONTENIDO -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
