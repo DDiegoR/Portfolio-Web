@@ -36,74 +36,6 @@
             <div class="line3"></div>
         </div>
         <!-- FIN ANIMACION BACKGROUND -->
-        <!-- LOGIN -->
-        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modalLogin">
-                <div class="modal-content">
-                        <div class="login-box">
-                            <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <h2>Iniciar Sesión</h2>
-                            <form>
-                                <div class="user-box">
-                                    <input type="email" name="" required="">
-                                    <label>Correo Electrónico</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="password" name="" required="">
-                                    <label>Contraseña</label>
-                                </div>
-                                <div class="button-form">
-                                    <a id="submit" href="#">
-                                       Ingresar
-                                    </a>
-                                    <div id="register">
-                                        No tienes cuenta?
-                                        <a href="#" data-bs-target="#modalRegistro" data-bs-toggle="modal">
-                                            Registrarse
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>                    
-                    </div>
-            </div>
-        </div>
-        <!-- MODAL REGISTRO -->
-        <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="login-box">
-                        <button type="button" class="btn-close btn-close-white pull-right" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h2>Registrarse</h2>
-                        <form>
-                            <div class="usuario-box col-12">
-                                <div class="user-box col">
-                                    <input type="text" name="" required="">
-                                    <label>Nombre</label>
-                                </div>
-                                <div class="user-box col">
-                                    <input type="text" name="" required="">
-                                    <label>Apellido</label>
-                                </div>
-                            </div>
-                            <div class="user-box">
-                                <input type="email" name="" required="">
-                                <label>Correo Electrónico</label>
-                            </div>
-                            <div class="user-box">
-                                <input type="password" name="" required="">
-                                <label>Contraseña</label>
-                            </div>
-                            <div class="registrarse">
-                                <button type="submit" class="btn btn-primary col-6">Registrarse</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- FIN LOGIN -->
 
         <!-- CONTACTO -->
         <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -128,21 +60,21 @@
                                 </div>
                                 <p>Trataré de responderte lo antes posible.</p>
                             </div>
-                            <form class="col">
+                            <form class="col" action="enviar.php" method="post">
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
-                                    <input type="text" class="form-control" id="recipient-name">
+                                    <input type="text" name="name" class="form-control" id="recipient-name">
                                 </div>
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">Correo Electrónico:</label>
-                                    <input type="email" class="form-control" id="recipient-name">
+                                    <input type="email" name="mail" class="form-control" id="recipient-name">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Mensaje:</label>
-                                    <textarea class="form-control" id="message-text" rows="6"></textarea>
+                                    <textarea name="message" class="form-control" id="message-text" rows="6"></textarea>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                                 </div>
                             </form>
                         </div>
@@ -180,13 +112,6 @@
                     <li><a class="enlaces" href="#estudios">Estudios</a></li>
                     <li><a class="enlaces" href="#proyectos">Proyectos</a></li>
                     <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo">Contacto</a></li>
-                    <li><a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo">Iniciar Sesión</a></li>
-                    <li>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input check" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label idioma" for="flexSwitchCheckDefault">En</label>
-                        </div>
-                    </li>
                 </ol>  
             </div>
             <div class="menuDesplegable">
@@ -200,12 +125,11 @@
                         <ul class="linksNav">
                             <li><a href="#sobreMi" onclick="desplazarSeccionMenu()">Sobre Mí</a></li>
                             <li><a href="#estudios" onclick="desplazarSeccionMenu()">Estudios</a></li>
+                            <li><a href="#proyectos" onclick="desplazarSeccionMenu()">Proyectos</a></li>
                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#contacto" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Contacto</a></li>
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#login" data-bs-whatever="@mdo" onclick="desplazarSeccionMenu()">Iniciar Sesión</a></li>
                         </ul>
                         <ul class="socialNavbar">
                             <li><a href="https://www.instagram.com/diegoromer9/" target="_blank"><img src="imagenes\instaNavbar.png" alt=""></a></li>
-                            <li><a href="https://twitter.com/romerodiego356" target="_blank"><img src="imagenes\tw.png" alt=""></a></li>
                             <li><a href="https://github.com/DDiegoR" target="_blank"><img src="imagenes\gh.png" alt=""></a></li>
                             <li><a href="https://www.linkedin.com/in/diego-eduardo-romero-700253221" target="_blank"><img src="imagenes\in.png" alt=""></a></li>
                         </ul>
@@ -214,17 +138,11 @@
             </div>
         </nav>
         <header class="vistaPrincipal">   
-            <!-- BARRA NAV -->
-            
-            <!-- BARRA NAV -->
 
             <!-- REDES SOCIALES -->
             <div id="social" class="social">
                 <a href="https://www.instagram.com/diegoromer9/" class="link" target="_blank">
                     <i class="fab fa-instagram instagram"></i>
-                </a>
-                <a href="https://twitter.com/romerodiego356" class="link" target="_blank">
-                    <i class="fab fa-twitter twitter"></i>
                 </a>
                 <a href="https://github.com/DDiegoR" class="link" target="_blank">
                     <i class="fab fa-brands fa-github"></i>
@@ -344,7 +262,7 @@
                             <h3 class="tituloEstudio">Full Stack Developer Jr <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">@Argentina Programa</a></h3>
                             <h5 class="subtituloEstudio">Febrero 2022 - Enero 2023</h5>
                             <p class="descripcionEstudio">
-                                Realicé el curso de Full Stack Developer Jr dictado por Argentina Programa... 
+                                Estoy cursando el curso de Full Stack Developer Jr dictado por Argentina Programa... 
                             </p>
                             <a href="#" class="enlaces" data-bs-toggle="modal" data-bs-target="#titulo" data-bs-whatever="@ap">Ver certificado</a>
                         </div>
@@ -352,10 +270,6 @@
                 </div>
             </section>
             <!-- FIN SECCION ESTUDIOS -->
-
-            <!-- SECCION HARD & SOFT SKILLS -->
-            
-            <!-- FIN SECCION HARD & SOFT SKILLS -->
             
             <!-- SECCION PROYECTOS -->
             <section id="proyectos" class="seccion-proyectos">
@@ -364,7 +278,6 @@
                     <ul class="listaPanel">
                         <li>
                             <div class="panel">
-                                <a href="#">
                                     <img src="imagenes/portfolio.png" alt="">
                                     <div class="cajaTexto">
                                         <h2>Portfolio Web</h2>
@@ -375,13 +288,10 @@
                                         </p>
                                         <h6>Año: 2022</h6>
                                     </div>
-                                </div>
-                                </a>
-                                
+                                </div>    
                         </li>
                         <li>
                             <div class="panel">
-                                <a href="#">
                                     <img src="imagenes/sitioweb.png" alt="">
                                     <div class="cajaTexto">
                                         <h2>Primer Sitio Web</h2>
@@ -389,31 +299,13 @@
                                             Este sitio web lo diseñé en un curso de Diseñador Web. Es como una página en donde hay info
                                             sobre mí. Fue desarollada a modo de práctica y el stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
                                         </p>
+                                        <a href="https://ddiegor.github.io/Sitio-Web-Final/" target="_blank"><u>Primer Sitio Web</u></a>
                                         <h6>Año: 2021</h6>
                                     </div>
-                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="panel">
-                                <a href="#">
-                                    <img src="imagenes/Simon.png" alt="">
-                                    <div class="cajaTexto">
-                                        <h2>Juego - Simón</h2>
-                                        <p>
-                                            Este proyecto es de un juego que desarrollé junto a un grupo de amigos en la facultad, el nombre del 
-                                            grupo era Vulgary. Este juego es una versión digital del famoso juego electrónico Simon creado 
-                                            por Ralph Baer y Howard J. Morrison, su interfaz es simple ya que esta desarrollado para consola 
-                                            utilizando el lenguaje Python. Fue una linda experiencia de trabajo en equipo y creatividad.
-                                        </p>
-                                        <h6>Año: 2016</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="panel">
-                                <a href="#">
                                     <img src="imagenes/aboutGH.png" alt="">
                                     <div class="cajaTexto">
                                         <h2>Tarjeta de Presentación</h2>
@@ -421,18 +313,13 @@
                                             Esta es una tarjeta de presentación web que diseñé en un curso de Diseñador Web.
                                             El stack de trabajo que utilicé fue: HTML, CSS, Bootstrap, JavaScript.
                                         </p>
+                                        <a href="https://ddiegor.github.io/About/" target="_blank" target="_blank"><u>Tarjeta de Presentación</u></a>
                                         <h6>Año: 2021</h6>
                                     </div>
-                                </a>
                             </div>
                         </li>
                     </ul>
-                </div>
-                
-                
-                
-                
-                
+                </div>  
             </section>
             <!-- FIN SECCION PROYECTOS -->
         </main>

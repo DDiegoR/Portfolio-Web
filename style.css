@@ -577,11 +577,17 @@ button{
 }
 .cajaTexto h2{
     padding: 20px 20px 0px;
+    color: #2ECC71;
 }
 .cajaTexto p, .cajaTexto h6{
     padding: 0 40px;
     font-size: 20px;
     color: white;
+}
+.cajaTexto a {
+    padding: 10px 40px;
+    color: #0379D6;
+    font-size: 20px;
 }
 /* FIN SECCION PROYECTOS */
 
