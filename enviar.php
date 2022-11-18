@@ -6,17 +6,16 @@ $message = $_POST['message'];
 $para = 'diegoromerofrre@gmail.com';
 $asunto = 'Mensaje del Portfolio';
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= 'X-Mailer: PHP/' . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain \r\n";
+$header = "From: $nombre $mail \r\n";
+$header .= "X-Mailer: PHP5\n";
+$header .= 'MIME-Version: 1.0' . "\n";
+$header .= 'Content-Type: text/html; charset=iso-8859-1' . "\r\n";
 
-$message = "Este mensaje fue enviado por: "$name " \r\n";
-$message .= "Su correo electrónico es: "$mail " \r\n";
-$message .= "Mensaje: "$message " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
+$message = "Este mensaje fue enviado por: ".$name." <br>";
+$message .= "Su correo electrónico es: ".$mail."<br>";
+$message .= "Mensaje: ".$message;
 
-mail($para, $asunto, $message);
+mail($para, $asunto, $message, $header);
 
 header('Location:index.html');
 ?>
