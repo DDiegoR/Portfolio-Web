@@ -1,4 +1,7 @@
 /* IMAGENES CERTIFICADOS */
+.modal-content {
+    background-color: transparent;
+}
 .modal-container.activado{
     position: fixed;
     width: 100vw;
@@ -13,6 +16,7 @@
     z-index: 100;
     width: 100%;
     height: 100%;
+    margin-bottom: 35px;
 }
 .modal-container.activado::after{
     content: '';
@@ -24,22 +28,21 @@
     background-color: rgba(0, 0, 0, 0.70 );
     z-index: 0;
 }
+.botonCerrar {
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+}
 /* FIN SECCION IMAGENES CERTIFICADOS */
-
-/* REGISTRO */
-.modal-title{
-    color: #fff;
-}
-.modal-body{
-    color: #0379D6
-}
-/* FIN REGISTRO */
 
 /* CONTACTO */
 .modalCaja{
     background: #242026;
     box-shadow: 5px 5px 35px #0379D6;
     border-radius: 10px;
+    margin-top: 5%;
 }
 .modal-caja{
     display: flex;
@@ -84,127 +87,3 @@
     }
 }
 /* FIN CONTACTO */
-
-/* LOGIN - REGISTRO */
-.modal{
-    font-family: League Spartan,Helvetica,Arial,sans-serif;
-}
-.modalLogin{
-    top: 10%;
-}
-.login-box {
-    position: absolute;
-    width: 400px;
-    left: 10%;
-    padding: 40px;
-    background: #242026;
-    box-shadow: 0 5px 25px #0379D6;
-    border-radius: 10px;
-}
-.login-box h2 {
-    margin: 0 0 60px;
-    padding: 0;
-    color: #0379D6;
-    text-align: center;
-}
-.login-box .usuario-box{
-    display: flex;
-    flex-direction: row;
-}
-.login-box .usuario-box .user-box:nth-child(1){
-    margin-right: 20px;
-    padding-right: 10px;
-}
-.login-box .user-box input {
-    position: relative;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-.login-box .user-box label {
-    position: relative;
-    left: 0;
-    top: -60px;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.login-box .user-box input:focus~label,
-.login-box .user-box input:valid~label {
-    top: -80px;
-    left: 0;
-    color: #0379D6;
-    font-size: 12px;
-}.registrarse{
-    text-align: center;
-}
-#submit {
-    padding: 15px 20px 10px 15px;
-    color: #0379D6;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    letter-spacing: 4px;
-    border: 1px solid #0379D6;
-    border-radius: 20px;
-    margin: auto;
-}
-#submit:hover {
-    background: #0379D6;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #0379D6, 0 0 25px #0379D6, 0 0 50px #0379D6, 0 0 100px #0379D6;
-}
-.button-form {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-#register {
-    font-size: 14px;
-    text-decoration: none;
-    color: #CBBDDB;
-    margin: auto;
-    width: 60%;
-    text-align: center;
-}
-#register a {
-    margin: auto;
-    color: #0379D6;
-    text-decoration: none;
-}
-@media only screen and (max-width: 576px){
-    .login-box{
-        width: 80%;
-    }
-    #submit{
-        padding: 10px 10px 10px 8px;
-        font-size: 14px;
-        letter-spacing: 1px;
-    }
-    #register{
-        font-size: 16px;
-        margin: 0;
-    }
-    .login-box .usuario-box{
-        display: block;
-    }
-    .login-box .user-box input{
-        font-size: 20px
-    }
-    .login-box .user-box label{
-        font-size: 20px;
-        top: -60px;
-    }
-}
-/* FIN LOGIN-REGISTRO */

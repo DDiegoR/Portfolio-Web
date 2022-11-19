@@ -417,9 +417,6 @@ body::-webkit-scrollbar {
     width: 80%;
 }
 .perfil{
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
     flex: 0.5;
     width: 100%;
     height: 100%;
@@ -651,7 +648,22 @@ button{
     .barraNavegacion{
         margin-right: 0px;
     }
-    
+    .cajaTexto h2 {
+        padding: 20px 0 0;
+    }
+    .cajaTexto p, .cajaTexto h6, .cajaTexto a {
+        padding: 0 10px;
+    }
+    .parrafoAbout p {
+        width: 90%;
+    }
+    .perfil {
+        display: block;
+        text-align: center;
+    }
+    .panel {
+        width: 100%;
+    }
     /* CONTACTO */
     .modal-caja{
         display: block;
@@ -703,9 +715,14 @@ button{
     .descripcion{
         font-size: 16px;
     }
+    .panel {
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 360px){
     .contenedorCentral{
         width: 95%;
     }
 }
+
+/* ANIMACIONES */

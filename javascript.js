@@ -71,7 +71,6 @@ function cambiaAP(){
 }
 
 
-
 // SECCION PROYECTOS
 
 // CAJA IMAGENES 
